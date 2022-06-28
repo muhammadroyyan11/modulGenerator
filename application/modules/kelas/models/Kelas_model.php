@@ -1,16 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-/*| --------------------------------------------------------------------------*/
-/*| dev : mpampamdev  */
-/*| version : V.0.0.2 */
-/*| facebook : https://web.facebook.com/mpampam */
-/*| fanspage : https://web.facebook.com/programmerjalanan */
-/*| instagram : https://www.instagram.com/programmer_jalanan */
-/*| youtube : https://www.youtube.com/channel/UC1TlTaxRNdwrCqjBJ5zh6TA */
-/*| --------------------------------------------------------------------------*/
-/*| Generate By M-CRUD Generator 28/06/2022 11:02*/
-/*| Please DO NOT modify this information*/
-
 
 class Kelas_model extends MY_Model{
 

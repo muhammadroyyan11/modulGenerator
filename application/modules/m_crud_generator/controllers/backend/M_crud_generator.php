@@ -1,14 +1,4 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
-/*| --------------------------------------------------------------------------*/
-/*| dev : mpampamdev  */
-/*| version : V.0.0.2 */
-/*| facebook : https://web.facebook.com/mpampam */
-/*| fanspage : https://web.facebook.com/programmerjalanan */
-/*| instagram : https://www.instagram.com/programmer_jalanan */
-/*| youtube : https://www.youtube.com/channel/UC1TlTaxRNdwrCqjBJ5zh6TA */
-/*| --------------------------------------------------------------------------*/
-/*| Generate By M-CRUD Generator 27/01/2021 03:56*/
-/*| Please DO NOT modify this information*/
 
 
 class M_crud_generator extends Backend{

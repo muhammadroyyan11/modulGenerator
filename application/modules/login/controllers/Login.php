@@ -1,12 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/* dev : mpampam*/
-/* fb : https://facebook.com/mpampam*/
-/* fanspage : https://web.facebook.com/programmerjalanan*/
-/* web : www.mpampam.com*/
-/* Please DO NOT modify this information */
-
 
 class Login extends Signin{
 

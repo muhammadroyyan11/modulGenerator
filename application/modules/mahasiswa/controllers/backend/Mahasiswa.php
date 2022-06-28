@@ -1,14 +1,5 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
-/*| --------------------------------------------------------------------------*/
-/*| dev : mpampamdev  */
-/*| version : V.0.0.2 */
-/*| facebook : https://web.facebook.com/mpampam */
-/*| fanspage : https://web.facebook.com/programmerjalanan */
-/*| instagram : https://www.instagram.com/programmer_jalanan */
-/*| youtube : https://www.youtube.com/channel/UC1TlTaxRNdwrCqjBJ5zh6TA */
-/*| --------------------------------------------------------------------------*/
-/*| Generate By M-CRUD Generator 28/06/2022 10:40*/
-/*| Please DO NOT modify this information*/
+
 
 
 class Mahasiswa extends Backend
