@@ -1,12 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-/* dev : mpampam*/
-/* fb : https://facebook.com/mpampam*/
-/* fanspage : https://web.facebook.com/programmerjalanan*/
-/* web : www.mpampam.com*/
-/* Generate By M-CRUD Generator 08/11/2020 00:31*/
-/* Location: ./application/modules/backend/controllers/Filemanager.php*/
-/* Please DO NOT modify this information */
 
 
 class Filemanager extends Backend{
