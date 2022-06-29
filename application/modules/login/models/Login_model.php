@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Login_model extends CI_Model{
+class Login_model extends CI_Model
+{
 
   public function __construct()
   {
@@ -18,12 +19,11 @@ class Login_model extends CI_Model{
                               auth_user.is_active,
                               auth_user.is_delete,
                               auth_user.created")
-                    ->from("auth_user")
-                    ->where("auth_user.email","$email")
-                    ->where("auth_user.is_active","1")
-                    ->where("auth_user.is_delete","0")
-                    ->get();
+      ->from("auth_user")
+      ->where("auth_user.email", "$email")
+      ->where("auth_user.is_active", "1")
+      ->where("auth_user.is_delete", "0")
+      ->get();
     return $qry;
   }
-
 }
