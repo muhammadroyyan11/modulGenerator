@@ -13,3 +13,10 @@ Login default super admin
 **************************
 - admin@admin.com
 - password
+
+
+**************************
+Soon
+**************************
+- auto relation table generator
+- generate REST API Table
