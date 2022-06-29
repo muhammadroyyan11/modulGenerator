@@ -17,15 +17,12 @@
 <body>
   <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
-      <div class="content-wrapper d-flex align-items-center auth px-0" style="background:#142935!important">
-        <div class="img-bg">
-          <img src="<?=base_url()?>_temp/backend/security.gif" alt="logo" style="width:400px;position:fixed;bottom:0;right:0;">
-        </div>
+      <div class="content-wrapper d-flex align-items-center auth px-0" style="background:#7a7d7b!important">
         <div class="row w-100 mx-0">
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5" style="border-radius:5px;">
               <div class="brand-logo text-center">
-                <img src="<?=base_url()?>_temp/uploads/img/<?=setting("logo")?>" alt="logo">
+                <img src="<?=base_url()?>_temp/uploads/logo/logo1.png" alt="logo">
               </div>
               <div class="text-center">
                 <h4>Hello! let's get started</h4>

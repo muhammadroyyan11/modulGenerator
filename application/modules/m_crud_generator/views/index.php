@@ -10,7 +10,6 @@
             <a href="<?=site_url("mcrud")?>" class="btn btn-sm btn-success btn-icon-text"><i class="fa fa-file btn-icon-prepend"></i> Add Module Crud Generator</a>
           <?php endif; ?>
           <button type="button" id="reload" class="btn btn-sm btn-info-2 btn-icon-text"><i class="mdi mdi-backup-restore btn-icon-prepend"></i> Reload</button>
-          <a href="<?=url("m_crud_generator/about")?>" id="about" class="btn btn-sm btn-info"><i class="mdi mdi-information btn-icon-prepend"></i></a>
         </div>
         <table class="table table-bordered table-striped" id="table" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
           <thead>
