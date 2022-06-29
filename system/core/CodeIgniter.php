@@ -75,7 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	if (file_exists(APPPATH.'config/app.php')) {
 		if (file_exists(APPPATH.'config/app.cfg')) {
 			$arr= json_decode(file_get_contents(APPPATH.'config/app.cfg'), true);
-			$arr2 	= array("app" => "m-code", "author" =>  "mpampamdev", "version" => "V.0.0.2", "facebook" => "https://web.facebook.com/mpampam", "fanspage" => "https://web.facebook.com/programmerjalanan", "youtube" => "https://www.youtube.com/channel/UC1TlTaxRNdwrCqjBJ5zh6TA", "instagram"=>"https://www.instagram.com/programmer_jalanan");
+			$arr2 	= array("app" => "modul generator", "author" =>  "royyan", "version" => "V.0.0.2", "facebook" => "https://web.facebook.com/mpampam", "fanspage" => "https://web.facebook.com/programmerjalanan", "youtube" => "https://www.youtube.com/channel/UC1TlTaxRNdwrCqjBJ5zh6TA", "instagram"=>"https://www.instagram.com/programmer_jalanan");
 			$result = array_diff($arr , $arr2);
 			if (!empty($result)) {
 				echo "Please DO NOT modify this information";
