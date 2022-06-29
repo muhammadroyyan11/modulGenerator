@@ -6,8 +6,7 @@ Build module codeigniter 3 Nyoba
 Dududu
 **************************
 - Buat database
-- configure db dulu sesuaikan
-- Hapus dummy tes (Tabel mahasiswa dan kelas)
+- configure db dulu sesuaikan sama nama yang telah dibuat
 
 **************************
 Login default super admin
