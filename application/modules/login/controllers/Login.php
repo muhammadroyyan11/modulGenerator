@@ -23,6 +23,12 @@ class Login extends Signin{
 
   }
 
+  public function register()
+  {
+      $data['title'] = 'Register';
+      $this->load->view('login', $data);
+  }
+
 
   function action()
   {
