@@ -214,17 +214,6 @@ class Backend extends CI_Controller{
       echo json_encode($json);
   }
 
-  // function imageRemoveEditor()
-  // {
-  //   $src = $this->input->post('src');
-  //   $file_name = str_replace(base_url()."_temp/uploads/img/", '', $src);
-  //   if(unlink("./_temp/uploads/img/".$file_name)){
-  //     $this->db->where('file_name', $file_name);
-  //     $this->db->delete('filemanager');
-  //   }
-  // }
-
-
 function is_allowed($permission = null, $redirect = true)
 {
   if ($permission == null) {
