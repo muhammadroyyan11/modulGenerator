@@ -10,7 +10,7 @@ Dududu
 - Hapus dummy tes (Tabel mahasiswa dan kelas)
 
 **************************
-Login super admin
+Login default super admin
 **************************
-- royyan@mail.com
-- 1234Arema
+- admin@admin.com
+- password
