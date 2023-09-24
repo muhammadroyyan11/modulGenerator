@@ -6,7 +6,7 @@ Build module codeigniter 3 Nyoba
 Dududu
 **************************
 - Buat database
-- configure db dulu sesuaikan sama nama yang telah dibuat
+- Buat table dan kolom yang akan di generate
 
 **************************
 Login default super admin
