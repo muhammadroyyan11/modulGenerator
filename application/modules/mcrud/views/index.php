@@ -245,7 +245,7 @@
   <body>
     <div class="loading-keyboard">
       <img src="<?=base_url()?>_temp/backend/loading.svg" alt="">
-      <p>Writting File...</p>
+      <p>Sabar Yahhh!!! Lagi Ngoding...</p>
     </div>
     <div class="container-scroller">
         <div class="content-wrapper" >

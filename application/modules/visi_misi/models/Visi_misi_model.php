@@ -1,24 +1,24 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*| --------------------------------------------------------------------------*/
-/*| dev : mpampamdev  */
+/*| dev : royyan  */
 /*| version : V.0.0.2 */
-/*| facebook : https://web.facebook.com/mpampam */
-/*| fanspage : https://web.facebook.com/programmerjalanan */
-/*| instagram : https://www.instagram.com/programmer_jalanan */
-/*| youtube : https://www.youtube.com/channel/UC1TlTaxRNdwrCqjBJ5zh6TA */
+/*| facebook :  */
+/*| fanspage :  */
+/*| instagram :  */
+/*| youtube :  */
 /*| --------------------------------------------------------------------------*/
-/*| Generate By M-CRUD Generator 27/01/2021 03:56*/
+/*| Generate By M-CRUD Generator 24/09/2023 20:42*/
 /*| Please DO NOT modify this information*/
 
 
-class M_crud_generator_model extends MY_Model{
+class Visi_misi_model extends MY_Model{
 
-  private $table        = "modules_crud_generator";
+  private $table        = "visi_misi";
   private $primary_key  = "id";
-  private $column_order = array('module', 'module_name', 'table', 'created_at');
-  private $order        = array('modules_crud_generator.id'=>"DESC");
-  private $select       = "modules_crud_generator.id,modules_crud_generator.module,modules_crud_generator.module_name,modules_crud_generator.table,modules_crud_generator.created_at";
+  private $column_order = array('visi', 'misi', 'createdOn');
+  private $order        = array('visi_misi.id'=>"DESC");
+  private $select       = "visi_misi.id,visi_misi.visi,visi_misi.misi,visi_misi.createdOn";
 
 public function __construct()
 	{
@@ -37,6 +37,21 @@ public function __construct()
     {
       $this->db->select($this->select);
       $this->db->from($this->table);
+
+    if($this->input->post("visi"))
+        {
+          $this->db->like("visi_misi.visi", $this->input->post("visi"));
+        }
+
+    if($this->input->post("misi"))
+        {
+          $this->db->like("visi_misi.misi", $this->input->post("misi"));
+        }
+
+    if($this->input->post("createdOn"))
+        {
+          $this->db->like("visi_misi.createdOn", $this->input->post("createdOn"));
+        }
 
       if(isset($_POST['order'])) // here order processing
        {
@@ -78,5 +93,5 @@ public function __construct()
 
 }
 
-/* End of file M_crud_generator_model.php */
-/* Location: ./application/modules_crud_generator/m_crud_generator/models/M_crud_generator_model.php */
+/* End of file Visi_misi_model.php */
+/* Location: ./application/modules/visi_misi/models/Visi_misi_model.php */
