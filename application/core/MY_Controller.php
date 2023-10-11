@@ -2,10 +2,9 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-/* dev : mpampam*/
-/* fb : https://facebook.com/mpampam*/
-/* fanspage : https://web.facebook.com/programmerjalanan*/
-/* web : www.mpampam.com*/
+/* dev : Muhammad Royyan Zamzami*/
+
+
 /* Please DO NOT modify this information */
 
 
