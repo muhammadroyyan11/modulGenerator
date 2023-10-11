@@ -16,15 +16,15 @@
             <div class="row">
             <div class="form-group col-sm-6">
               <label  id="menu">Menu Title</label><span class="text-danger"> *</span>
-              <input class="form-control form-control-sm" type="text" name="menu" value="<?=$menu?>" placeholder="Menu Title">
+              <input class="form-control" type="text" name="menu" value="<?=$menu?>" placeholder="Menu Title">
             </div>
 
 
             <div class="form-group col-sm-6">
               <label>Icon</label>
-                <input type="text" id="icon" name="icon" value="<?=$icon?>" class="file-upload-default">
+                <input type="hidden" id="icon" name="icon" value="<?=$icon?>" class="file-upload-default">
                 <div class="input-group col-xs-12">
-                  <input type="text" class="form-control file-upload-info form-control-sm" id="icons" value="<?=$icon?>" disabled="" placeholder="Icon">
+                  <input type="text" class="form-control file-upload-info" id="icons" value="<?=$icon?>" disabled="" placeholder="Icon">
                   <span class="input-group-append">
                     <button class="file-upload-browse btn btn-primary btn-sm" href="<?=url("core/icon")?>" id="icons" type="button">Icon</button>
                     <button class="file-upload-browse btn btn-danger btn-sm" id="icons-remove" type="button"><i class="fa fa-trash"></i></button>
@@ -34,7 +34,7 @@
 
             <div class="form-group col-sm-6">
               <label id="type">Type</label><span class="text-danger"> *</span>
-              <select class="form-control form-control-sm" name="type">
+              <select class="form-control" name="type">
                 <option <?=$type=="controller" ? "selected":""?> value="controller">Controller</option>
                 <option <?=$type=="url" ? "selected":""?> value="url">Url</option>
               </select>
@@ -42,12 +42,12 @@
 
             <div class="form-group col-sm-6">
               <label id="controller">Link</label>
-              <input type="text" class="typeahead form-control form-control-sm"  name="controller" placeholder="Link/Controller" value="<?=$controller?>">
+              <input type="text" class="typeahead form-control"  name="controller" placeholder="Link/Controller" value="<?=$controller?>">
             </div>
 
             <div class="form-group col-sm-6">
               <label for="">Target</label>
-              <select class="form-control form-control-sm" name="data_target" id="data_target">
+              <select class="form-control" name="data_target" id="data_target">
                 <option value="">None</option>
                 <option <?=$data_target=="_blank" ? "selected":""?> value="_blank">_blank</option>
               </select>
@@ -55,7 +55,7 @@
 
             <div class="form-group col-sm-6">
                 <label >Is Parent</label>
-                <select class="form-control form-control-sm" name="is_parent" id="is_parent">
+                <select class="form-control" name="is_parent" id="is_parent">
                   <option <?=$is_parent==0?"selected":""?> value="0">Y</option>
                   <?php $get_menu = $this->db->get_where("main_menu",["id_menu !="=>$id_menu, "is_parent"=> "0"]); ?>
                   <optgroup label="-- Main Menu --">
@@ -69,7 +69,7 @@
 
             <div class="form-group col-sm-6">
                 <label id="is_active">Is Active</label><span class="text-danger"> *</span>
-                <select class="form-control form-control-sm" name="is_active">
+                <select class="form-control" name="is_active">
                   <option value=""> -- Select --</option>
                   <option <?=$is_active=="1"?"selected":""?> value="1">Y</option>
                   <option <?=$is_active=="0"?"selected":""?> value="0">N</option>
