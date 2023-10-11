@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-12 col-xl-12 mx-auto animated fadeIn delay-2s">
     <div class="card m-b-30">
       <div class="card-header bg-primary text-white">
@@ -47,7 +47,43 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+
+<!-- Zero configuration table -->
+<section id="basic-datatable">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title"> <?= ucwords($title_module) ?></h4>
+          <div class="pull-right">
+            <?php if (is_allowed('crud_generator_add')) : ?>
+              <a href="<?= site_url("mcrud") ?>" class="btn btn-success btn-flat"><i class="fa fa-file btn-icon-prepend"></i> Add Module Crud Generator</a>
+            <?php endif; ?>
+            <button type="button" id="reload" class="btn btn-primary btn-flat"><i class="mdi mdi-backup-restore btn-icon-prepend"></i> Reload</button>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-body card-dashboard">
+            <div class="table-responsive">
+              <table class="table display" name="table" id="table" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                <thead>
+                  <tr>
+                    <th>Visi</th>
+                    <th>Misi</th>
+                    <th>CreatedOn</th>
+                    <th>#</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -71,13 +107,11 @@
 
       // Load data for the table's content from an Ajax source
       "ajax": {
-        "url": "<?= url("
-        visi_misi / json ") ?>",
+        "url": "<?= url("visi_misi/json") ?>",
         "type": "POST",
         "data": function(data) {
           data.visi = $("#visi").val();
           data.misi = $("#misi").val();
-          data.createdOn = $("#createdOn").val();
         }
       },
 
@@ -95,14 +129,9 @@
         },
 
         {
-          "targets": 2,
-          "orderable": false
-        },
-
-        {
           "className": "text-center",
           "orderable": false,
-          "targets": 3
+          "targets": 2
         },
       ],
     });
@@ -110,7 +139,6 @@
     $("#reload").click(function() {
       $("#visi").val("");
       $("#misi").val("");
-      $("#createdOn").val("");
       table.ajax.reload();
     });
 
